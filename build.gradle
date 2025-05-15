@@ -20,7 +20,7 @@ test {
     useJUnitPlatform()
 }
 
-task copyWebsite(type:Copy){
+tasks.register('copyWebsite', Copy){
     from 'src/main/resources/websites'
     into 'docs'
 }
